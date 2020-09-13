@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="DELETE" field="u_request_type" table="x_58872_needit_needit" version="3">
+        <sys_choice_set action="DELETE">
+            <element>u_request_type</element>
+            <name>x_58872_needit_needit</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by/>
+            <sys_created_on/>
+            <sys_id/>
+            <sys_mod_count/>
+            <sys_name/>
+            <sys_package/>
+            <sys_policy/>
+            <sys_scope/>
+            <sys_update_name/>
+            <sys_updated_by/>
+            <sys_updated_on>2020-09-13 09:33:32</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application/>
+        <file_path/>
+        <instance_id>d38f6573dbc848d42f68c5970596198b</instance_id>
+        <instance_name>dev94061</instance_name>
+        <name>sys_choice_x_58872_needit_needit_u_request_type</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="DELETE" field="u_request_type" table="x_58872_needit_needit" version="3"><sys_choice_set action="DELETE"><element>u_request_type</element><name>x_58872_needit_needit</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by/><sys_created_on/><sys_id/><sys_mod_count/><sys_name/><sys_package/><sys_policy/><sys_scope/><sys_update_name/><sys_updated_by/><sys_updated_on>2020-09-13 09:33:32</sys_updated_on></sys_choice_set></sys_choice></record_update>]]></payload>
+        <payload_hash>1673447142</payload_hash>
+        <record_name>NeedIt.Request type</record_name>
+        <reverted_from/>
+        <source>6c0487e8db5610109109c4ab0b9619e0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>iVishal</sys_created_by>
+        <sys_created_on>2020-09-13 09:33:32</sys_created_on>
+        <sys_id>b51cbf90db5710109109c4ab0b96193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17486d001380000001</sys_recorded_at>
+        <sys_updated_by>iVishal</sys_updated_by>
+        <sys_updated_on>2020-09-13 09:33:32</sys_updated_on>
+        <type>Choice list</type>
+        <update_guid>7d1cbf900c571010d53e79a5c9c5003a</update_guid>
+        <update_guid_history>7d1cbf900c571010d53e79a5c9c5003a:1673447142,f91cbf90dc57101007f17e3f282e5636:1225357641,3d1cbf9062571010cbd222c0f04d8432:-1275199506,f51cbf90e8571010e44aad6d95c03c22:-192594322,0c644b2c08561010fd96d484e8104471:0,b7544b2cc9561010fd094f5896847661:-192594322</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>iVishal</sys_created_by>
+        <sys_created_on>2020-09-13 09:33:39</sys_created_on>
+        <sys_db_object display_value="" name="sys_choice_set">sys_choice_set</sys_db_object>
+        <sys_id>ee1c33d0db5710109109c4ab0b9619e9</sys_id>
+        <sys_metadata>ee1c33d0db5710109109c4ab0b9619e9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_request_type</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_choice_x_58872_needit_needit_u_request_type</sys_update_name>
+        <sys_update_version display_value="sys_choice_x_58872_needit_needit_u_request_type">b51cbf90db5710109109c4ab0b96193b</sys_update_version>
+        <sys_updated_by>iVishal</sys_updated_by>
+        <sys_updated_on>2020-09-13 09:33:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
