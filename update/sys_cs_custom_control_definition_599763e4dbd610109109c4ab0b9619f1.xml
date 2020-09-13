@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_custom_control_definition">
+    <sys_cs_custom_control_definition action="INSERT_OR_UPDATE">
+        <channel>mweb</channel>
+        <sys_class_name>sys_cs_custom_control_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-26 09:40:25</sys_created_on>
+        <sys_custom_control display_value="Test Paris 2">83c623a4dbd610109109c4ab0b9619e3</sys_custom_control>
+        <sys_domain>global</sys_domain>
+        <sys_id>599763e4dbd610109109c4ab0b9619f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_cs_custom_control_definition_599763e4dbd610109109c4ab0b9619f1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-26 09:40:25</sys_updated_on>
+        <ux_component_definition display_value="sn-record-url">12dd5d98d5c83b0c3558a0ccbfb3adc0</ux_component_definition>
+    </sys_cs_custom_control_definition>
+</record_update>

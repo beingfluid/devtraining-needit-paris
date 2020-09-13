@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <description>Test Paris 1 Input</description>
+        <flexible_conversation_switching>true</flexible_conversation_switching>
+        <graph>{
+  "graph_api_version": "1.0.21",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "a09476b8a2354845825d6a767b471bb0": {
+          "id": "a09476b8a2354845825d6a767b471bb0",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          },
+          "parameters": [
+            {
+              "name": "Test",
+              "value": "Paris1",
+              "checked": true,
+              "id": "9c7e482afc8e40f0958dcf920968a53e",
+              "disabled": false,
+              "referenced": false
+            }
+          ],
+          "variableIds": [
+            "9c7e482afc8e40f0958dcf920968a53e"
+          ]
+        },
+        "0e2a52493edd47d78c96e8d5c47b292f": {
+          "id": "0e2a52493edd47d78c96e8d5c47b292f",
+          "stepType": "CustomInput",
+          "name": "Test Paris 1",
+          "generateDataFunction": "function() {\n    /* Build and return your data object that the custom control will be rendered with here.\n\n       var car = vaInputs.fav_color == 'red' ? 'corvette' : 'shelby';\n       vaVars.script_var_1 = 'i like a ' + vaInputs.fav_color + ' ' + car;\n       return {'color': vaInputs.fav_color, 'car': car, 'var_text': vaVars.script_var_1};\n   */\n  \n       var car = vaInputs.fav_color == 'red' ? 'corvette' : 'shelby';\n       vaVars.script_var_1 = 'i like a ' + vaInputs.fav_color + ' ' + car;\n       return {'color': vaInputs.fav_color, 'car': car, 'var_text': vaVars.script_var_1};\n}\n",
+          "messageTranscriptFunction": "function(controlData) {\n    /* Build a message for the custom control that will be recorded in the transcript\n\n        return 'The CustomControl myCustomInputControl just rendered, with controlData: '\n            + JSON.stringify(controlData);\n   */\n  \n        return 'The CustomControl myCustomInputControl just rendered, with controlData: '\n            + JSON.stringify(controlData);\n}\n",
+          "inputResponseHandlerFunction": "function(controlData, responseValue) {\n    /* Provide an input response handler function for the custom control\n\n        vaVars.script_var_1 = vaVars.script_var_1\n            + ', and I want to '\n            + responseValue.action;\n   */\n  \n        vaVars.script_var_1 = vaVars.script_var_1\n            + ', and I want to '\n            + responseValue.action;\n}\n",
+          "inputResponseMessageTranscriptFunction": "function(controlData, responseValue) {\n    /* Build a message for the custom input control that will be recorded in the transcript\n\n        return 'The CustomControl myCustomInputControl just responded with response: '\n            + JSON.stringify(responseValue)\n            + ', and with controlData: '\n            + JSON.stringify(controlData);\n    */\n    \n        return 'The CustomControl myCustomInputControl just responded with response: '\n            + JSON.stringify(responseValue)\n            + ', and with controlData: '\n            + JSON.stringify(controlData);\n}\n",
+          "unsupportedDeviceMessage": {
+            "value": "Default fallback message displayed when a user is running the control on an unsupported channel.",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "vaInputs.user=6816f79cc0a8016401c5a33be04be441",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "vaInputs.user=62826bf03710200044e0bfc8bcbe5df1",
+            "mode": "query"
+          }
+        },
+        "f3a1ae24c6f74dd4a4157cc375f771cd": {
+          "id": "f3a1ae24c6f74dd4a4157cc375f771cd",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          },
+          "outputVariables": [
+            {
+              "key": "Test",
+              "value": "Paris 1",
+              "mode": "simple"
+            }
+          ]
+        }
+      },
+      "edges": [
+        {
+          "id": "7859270ca0ef4b6582941a4c699aa48d",
+          "edgeType": "Edge",
+          "source": "a09476b8a2354845825d6a767b471bb0",
+          "target": "0e2a52493edd47d78c96e8d5c47b292f",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "31a8febda3c64608b3030480869f5d5b",
+          "edgeType": "Edge",
+          "source": "0e2a52493edd47d78c96e8d5c47b292f",
+          "target": "f3a1ae24c6f74dd4a4157cc375f771cd",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "9c7e482afc8e40f0958dcf920968a53e": {
+      "id": "9c7e482afc8e40f0958dcf920968a53e",
+      "name": "test",
+      "label": "Test",
+      "defaultValue": "Paris1",
+      "varType": "string",
+      "category": "vaInputs"
+    }
+  }
+}</graph>
+        <key_phrases/>
+        <library>true</library>
+        <live_agent>false</live_agent>
+        <name>Test Paris 1 Input</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <roles/>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-26 09:43:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>bd882f2cdbd610109109c4ab0b9619d7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Test Paris 1 Input</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_cb_topic_bd882f2cdbd610109109c4ab0b9619d7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-26 09:55:10</sys_updated_on>
+        <type>CUSTOM_INPUT</type>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="delete_multiple" query="document_key=bd882f2cdbd610109109c4ab0b9619d7"/>
+</record_update>
